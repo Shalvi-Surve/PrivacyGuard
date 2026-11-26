@@ -11,6 +11,7 @@ export default defineConfig(({ mode }) => {
   const apiTarget = (env.VITE_API_PROXY_TARGET || env.VITE_API_BASE_URL || 'http://127.0.0.1:8000').replace(/\/$/, '')
 
   return {
+    base: '/PrivacyGuard/',
     envDir: projectEnvDir,
     plugins: [react()],
     server: {
