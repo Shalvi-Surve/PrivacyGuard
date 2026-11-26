@@ -10,8 +10,10 @@ export default defineConfig(({ mode }) => {
   // target to be overridden if the local API port changes.
   const apiTarget = (env.VITE_API_PROXY_TARGET || env.VITE_API_BASE_URL || 'http://127.0.0.1:8000').replace(/\/$/, '')
 
+  const base - env.VITE_BASE_PATH || '/'
+
   return {
-    base: '/PrivacyGuard/',
+    base,
     envDir: projectEnvDir,
     plugins: [react()],
     server: {
