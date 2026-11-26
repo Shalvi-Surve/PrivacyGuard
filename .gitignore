@@ -1,0 +1,64 @@
+# Environment-specific configuration and secrets. Keep the placeholder template.
+.env*
+!.env.example
+**/.env*
+!**/.env.example
+
+# Python environments, caches, coverage and local test output.
+.venv/
+venv/
+backend/.venv/
+backend/venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+build/
+site/
+
+# Frontend dependencies and generated bundles/type-check state.
+node_modules/
+dist/
+*.tsbuildinfo
+coverage/
+.coverage
+
+# Local research databases, journals, exports, backups and logs.
+*.db
+*.db-*
+*.sqlite
+*.sqlite3
+*.sqlite3-*
+*.bak
+*.backup
+*.dump
+*.log
+*.log.*
+*.pem
+*.key
+*.p12
+*.pfx
+backups/
+**/backups/
+backend/reports/
+
+# Local temporary material and machine/editor metadata.
+.tmp/
+.codex/
+.agents/
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+desktop.ini
+PROJECT_SOURCE_REVIEW.txt
+
+# Optional experiment output directories (no generated measurements by default).
+experiments/results/raw/*
+experiments/results/processed/*
+experiments/results/figures/*
+!experiments/results/raw/.gitkeep
+!experiments/results/processed/.gitkeep
+!experiments/results/figures/.gitkeep
